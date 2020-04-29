@@ -179,6 +179,10 @@
             <ul>
               
                 <li>
+                  <a href="#github.com.oojob.protobuf.Attachment"><span class="badge">M</span>Attachment</a>
+                </li>
+              
+                <li>
                   <a href="#github.com.oojob.protobuf.Email"><span class="badge">M</span>Email</a>
                 </li>
               
@@ -315,6 +319,21 @@
             </ul>
           </li>
         
+          
+          <li>
+            <a href="#applicants.proto">applicants.proto</a>
+            <ul>
+              
+                <li>
+                  <a href="#github.com.oojob.protobuf.Applicant"><span class="badge">M</span>Applicant</a>
+                </li>
+              
+              
+              
+              
+            </ul>
+          </li>
+        
         <li><a href="#scalar-value-types">Scalar Value Types</a></li>
       </ul>
     </div>
@@ -326,6 +345,38 @@
       </div>
       <p>Created on Sun Apr 28 2020</p><p>Base entity protobuf for place/rating/review associated with upper level</p><p>models/schema's.</p><p>This file is resposible for storing all the base protobuff `message`.</p><p>@authors nirajgeorgian@oojob.io (Niraj Kishore)</p><p>Copyright (c) 2020 - oojob</p>
 
+      
+        <h3 id="github.com.oojob.protobuf.Attachment">Attachment</h3>
+        <p>Attachment help's us to define what type of attchment and which file is</p><p>responsible for it.</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>type</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Attachment type :- it defines file type which help&#39;s frontend to render
+/ appropiate view for example: type = PDF || type = JPEG </p></td>
+                </tr>
+              
+                <tr>
+                  <td>file</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Attachment file :- file upload for this attachment </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
       
         <h3 id="github.com.oojob.protobuf.Email">Email</h3>
         <p>Email help's us to store email valeu with some metadata</p>
@@ -718,11 +769,11 @@
       <div class="file-heading">
         <h2 id="metadata.proto">metadata.proto</h2><a href="#title">Top</a>
       </div>
-      <p>Created on Sun Apr 28 2020</p><p>Base entity protobuf for metadata associated with upper level</p><p>models/schema's.</p><p>This file is resposible for storing all the base protobuff `message`.</p><p>@authors nirajgeorgian@oojob.io (Niraj Kishore)</p><p>Copyright (c) 2020 - oojob</p>
+      <p>Created on Sun Apr 28 2020</p><p>Base entity protobuf for metadata associated with upper level</p><p>models/schema's.</p><p>This model is helper model which attach additional data related to time</p><p>For example: when it was created, when it moved to draft, or when it moved</p><p>to expired etc. This file is responsible for storing all the base protobuf</p><p>`message`.</p><p>@authors nirajgeorgian@oojob.io (Niraj Kishore)</p><p>Copyright (c) 2020 - oojob</p>
 
       
         <h3 id="github.com.oojob.protobuf.Metadata">Metadata</h3>
-        <p>Metadata it should be attached with higher level entity</p>
+        <p>Metadata it should be attached with higher level entity</p><p>It will provide you with additional attachment of time based which will</p><p>help you to analyze the life process of the entity it attached to.</p>
 
         
           <table class="field-table">
@@ -1200,6 +1251,65 @@
             
           </tbody>
         </table>
+      
+
+      
+
+      
+    
+      
+      <div class="file-heading">
+        <h2 id="applicants.proto">applicants.proto</h2><a href="#title">Top</a>
+      </div>
+      <p>Created on Sun Apr 29 2020</p><p>Applicant entity related messages.</p><p>This file is resposible for all operation related to job entity.</p><p>@authors nirajgeorgian@oojob.io (Niraj Kishore)</p><p>Copyright (c) 2020 - oojob</p>
+
+      
+        <h3 id="github.com.oojob.protobuf.Applicant">Applicant</h3>
+        <p>Applicant for job | task</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>applications</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>total applied applicant&#39;s </p></td>
+                </tr>
+              
+                <tr>
+                  <td>shortlisted</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>shortlisted applicant </p></td>
+                </tr>
+              
+                <tr>
+                  <td>onhold</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>onhold status applicant </p></td>
+                </tr>
+              
+                <tr>
+                  <td>rejected</td>
+                  <td><a href="#string">string</a></td>
+                  <td>repeated</td>
+                  <td><p>rejected applicant </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+
       
 
       
