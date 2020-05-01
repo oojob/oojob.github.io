@@ -183,6 +183,10 @@
                 </li>
               
                 <li>
+                  <a href="#github.com.oojob.protobuf.DefaultResponse"><span class="badge">M</span>DefaultResponse</a>
+                </li>
+              
+                <li>
                   <a href="#github.com.oojob.protobuf.Email"><span class="badge">M</span>Email</a>
                 </li>
               
@@ -368,7 +372,76 @@
                   <td>file</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
-                  <td><p>Attachment file :- file upload for this attachment </p></td>
+                  <td><p>Attachment file :- file upload for this attachment same as `name` </p></td>
+                </tr>
+              
+                <tr>
+                  <td>upload_date</td>
+                  <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
+                  <td></td>
+                  <td><p>Attachment upload_date :- date time on which the attachment was uploaded </p></td>
+                </tr>
+              
+                <tr>
+                  <td>url</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Attachment url :- generated url for the attachment </p></td>
+                </tr>
+              
+                <tr>
+                  <td>user</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>Attachment user :- user who upload the attachment
+/ it will store the user id who stored the attachment </p></td>
+                </tr>
+              
+                <tr>
+                  <td>folder</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>folder :- which describe where to put it
+/ for example for ccompanies in S3 there is a seperate folder for companies
+/ for user profiles there is a seperate folder for user profile </p></td>
+                </tr>
+              
+            </tbody>
+          </table>
+
+          
+
+        
+      
+        <h3 id="github.com.oojob.protobuf.DefaultResponse">DefaultResponse</h3>
+        <p>DefaultResponse act's as a default response for our standard use case</p>
+
+        
+          <table class="field-table">
+            <thead>
+              <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td>status</td>
+                  <td><a href="#bool">bool</a></td>
+                  <td></td>
+                  <td><p>DefaultResponse status :- weather the performed operation succedded or not </p></td>
+                </tr>
+              
+                <tr>
+                  <td>error</td>
+                  <td><a href="#string">string</a></td>
+                  <td></td>
+                  <td><p>DefaultResponse error :- what&#39;s the error if existed based on status </p></td>
+                </tr>
+              
+                <tr>
+                  <td>code</td>
+                  <td><a href="#int64">int64</a></td>
+                  <td></td>
+                  <td><p>DefaultResponse code :- what&#39;s the code for the error which originated </p></td>
                 </tr>
               
             </tbody>
